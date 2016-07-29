@@ -13,5 +13,9 @@
     "typings": "^1.3.2",
     "webpack": "^1.13.1",
     "webpack-espower-loader": "^1.0.1"
+  },
+  "scripts": {
+    "postinstall": "typings install",
+    "test": "karma start"
   }
 }
