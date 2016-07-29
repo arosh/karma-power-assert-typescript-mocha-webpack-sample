@@ -11,8 +11,11 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.ts(x?)$/, loader: 'ts-loader' },
-      { test: /\.json$/, loader: 'json-loader' }
-    ]
-  }
+      { test: /\.ts$/, loader: 'ts-loader' },
+      { test: /\.json$/, loader: 'json-loader' },
+    ],
+    postLoaders: [
+      { test: /_test\.ts$/, loader: 'webpack-espower-loader' },
+    ],
+  },
 };

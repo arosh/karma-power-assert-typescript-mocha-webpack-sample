@@ -1,4 +1,3 @@
-/// <reference path="../../typings/index.d.ts" />
 import * as assert from "power-assert";
 import {add} from "../../src/browser/sub";
 
