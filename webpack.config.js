@@ -9,7 +9,12 @@ module.exports = {
   resolve: {
     extensions: ['', '.ts', '.js'],
   },
+  devtool: "inline-source-map",
   module: {
+    preLoaders: [
+      // https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/tutorials/React%20%26%20Webpack.md
+      { test: /\.js$/, loader: "source-map-loader" }
+    ],
     loaders: [
       { test: /\.ts$/, loader: 'ts-loader' },
       { test: /\.json$/, loader: 'json-loader' },
