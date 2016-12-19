@@ -1,7 +1,10 @@
 {
     "compilerOptions": {
         "noImplicitAny": true,
-        "noImplicitReturns": true
+        "noImplicitReturns": true,
+        "types": [
+            "mocha"
+        ]
     },
     "exclude": [
         "node_modules"
