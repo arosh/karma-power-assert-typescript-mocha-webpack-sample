@@ -4,7 +4,8 @@
         "noImplicitReturns": true,
         "types": [
             "mocha"
-        ]
+        ],
+        "outDir": "./dist"
     },
     "exclude": [
         "node_modules"
