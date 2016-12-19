@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Fri Jul 29 2016 21:29:35 GMT+0900 (JST)
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -27,11 +27,17 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'test/browser/*.ts': ['webpack'],
+      'test/browser/*.ts': ['webpack'],
     },
-          
+
 
     webpack: require(__dirname + '/webpack.config.js'),
+
+
+    // https://github.com/angular/angular-cli/issues/2125#issuecomment-247395088
+    mime: {
+      'text/x-typescript': ['ts', 'tsx']
+    },
 
 
     // test results reporter to use
